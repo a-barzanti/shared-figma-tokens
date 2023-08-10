@@ -895,11 +895,11 @@
       "bookingCard": {
         "infoBar": {
           "bg": {
-            "value": "{palette.background.inverse}",
+            "value": "{foundations.palette.common.black}",
             "type": "color"
           },
           "fg": {
-            "value": "{palette.text.inverse}",
+            "value": "{foundations.palette.common.white}",
             "type": "color"
           },
           "padding": {
@@ -1339,7 +1339,7 @@
         },
         "label": {
           "default": {
-            "value": "{palette.common.black}",
+            "value": "{palette.text.primary}",
             "type": "color"
           },
           "disabled": {
@@ -1696,6 +1696,22 @@
           }
         },
         "heroBlock": {
+          "marginBottom": {
+            "xs": {
+              "value": "{foundations.styles.spacingScale.8}",
+              "type": "spacing"
+            },
+            "md": {
+              "value": "{foundations.styles.spacingScale.10}",
+              "type": "spacing"
+            },
+            "lg": {
+              "value": "{foundations.styles.spacingScale.12}",
+              "type": "spacing"
+            }
+          }
+        },
+        "heroCarouselBlock": {
           "marginBottom": {
             "xs": {
               "value": "{foundations.styles.spacingScale.8}",
@@ -2251,10 +2267,6 @@
           "value": "{foundations.styles.spacingScale.4}",
           "type": "spacing"
         },
-        "fill": {
-          "value": "{foundations.palette.common.white}",
-          "type": "color"
-        },
         "padding": {
           "xs": {
             "value": "{foundations.styles.spacingScale.3},{foundations.styles.spacingScale.2},{foundations.styles.spacingScale.3},{foundations.styles.spacingScale.2}",
@@ -2285,6 +2297,16 @@
         }
       },
       "hero": {
+        "card": {
+          "fg": {
+            "value": "{palette.text.primary}",
+            "type": "color"
+          },
+          "bg": {
+            "value": "{palette.background.paper}",
+            "type": "color"
+          }
+        },
         "image": {
           "gradient": {
             "background": {
@@ -2292,14 +2314,6 @@
               "type": "color"
             }
           }
-        },
-        "onLight": {
-          "value": "{foundations.palette.common.black}",
-          "type": "color"
-        },
-        "onDark": {
-          "value": "{foundations.palette.common.white}",
-          "type": "color"
         },
         "width": {
           "xs": {
@@ -2476,10 +2490,6 @@
           }
         },
         "card": {
-          "bgNoPips": {
-            "value": "{palette.background.paper}",
-            "type": "color"
-          },
           "fg": {
             "value": "{palette.text.primary}",
             "type": "color"
@@ -2496,6 +2506,22 @@
               "type": "color"
             }
           }
+        }
+      },
+      "heroImage": {
+        "mobileImageBreakpoint": {
+          "value": 1200,
+          "type": "sizing"
+        },
+        "sizes": {
+          "value": [
+            375,
+            786,
+            1200,
+            1500,
+            1800
+          ],
+          "type": "other"
         }
       },
       "iconButton": {
@@ -2528,7 +2554,7 @@
           },
           "icon": {
             "default": {
-              "value": "{palette.text.primary}",
+              "value": "{foundations.palette.common.black}",
               "type": "color"
             },
             "disabled": {
@@ -2936,6 +2962,18 @@
           "type": "typography"
         }
       },
+      "navHeader": {
+        "height": {
+          "xs": {
+            "value": "64px",
+            "type": "sizing"
+          },
+          "lg": {
+            "value": "129px",
+            "type": "sizing"
+          }
+        }
+      },
       "navigation": {
         "fg": {
           "value": "{palette.text.primary}",
@@ -3202,8 +3240,12 @@
           }
         },
         "width": {
+          "xs": {
+            "value": "100%",
+            "type": "sizing"
+          },
           "sm": {
-            "value": "390px",
+            "value": "auto",
             "type": "sizing"
           },
           "input": {
@@ -3212,10 +3254,6 @@
           },
           "icon": {
             "value": "{foundations.styles.spacingScale.6}",
-            "type": "sizing"
-          },
-          "lg": {
-            "value": "200px",
             "type": "sizing"
           },
           "popper": {
@@ -3229,20 +3267,24 @@
             "type": "spacing"
           }
         },
-        "cancelButtonContainer": {
-          "padding": {
-            "value": "{foundations.styles.spacingScale.3}, 0, {foundations.styles.spacingScale.3}, {foundations.styles.spacingScale.6}",
-            "type": "spacing"
-          }
-        },
         "listBox": {
           "width": {
-            "value": "374px",
-            "type": "sizing"
+            "xs": {
+              "value": "100vw",
+              "type": "sizing"
+            },
+            "sm": {
+              "value": "100%",
+              "type": "sizing"
+            }
           },
           "left": {
             "xs": {
               "value": "-{foundations.styles.spacingScale.5}",
+              "type": "spacing"
+            },
+            "sm": {
+              "value": "0px",
               "type": "spacing"
             }
           },
@@ -3381,11 +3423,11 @@
       "showCard": {
         "infoBar": {
           "bg": {
-            "value": "{palette.background.inverse}",
+            "value": "{foundations.palette.common.black}",
             "type": "color"
           },
           "fg": {
-            "value": "{palette.text.inverse}",
+            "value": "{foundations.palette.common.white}",
             "type": "color"
           },
           "padding": {
@@ -3461,11 +3503,11 @@
       "showPageInfo": {
         "infoBar": {
           "bg": {
-            "value": "{palette.background.inverse}",
+            "value": "{foundations.palette.common.black}",
             "type": "color"
           },
           "fg": {
-            "value": "{palette.text.inverse}",
+            "value": "{foundations.palette.common.white}",
             "type": "color"
           },
           "padding": {
@@ -3755,7 +3797,7 @@
         },
         "icon": {
           "default": {
-            "value": "{palette.text.primary}",
+            "value": "{foundations.palette.common.black}",
             "type": "color"
           },
           "disabled": {
@@ -3780,6 +3822,14 @@
         "padding": {
           "value": "{foundations.styles.spacingScale.3}, {foundations.styles.spacingScale.3}, {foundations.styles.spacingScale.3}, {foundations.styles.spacingScale.3},",
           "type": "spacing"
+        }
+      }
+    },
+    "page": {
+      "innerContainer": {
+        "maxWidth": {
+          "value": 1800,
+          "type": "sizing"
         }
       }
     },
@@ -4269,11 +4319,11 @@
       "bookingCard": {
         "infoBar": {
           "bg": {
-            "value": "{palette.background.inverse}",
+            "value": "{foundations.palette.common.black}",
             "type": "color"
           },
           "fg": {
-            "value": "{palette.text.inverse}",
+            "value": "{foundations.palette.common.white}",
             "type": "color"
           },
           "padding": {
@@ -4577,7 +4627,7 @@
           "border": {
             "default": {
               "value": {
-                "color": "{foundations.palette.common.black}",
+                "color": "{foundations.palette.common.white}",
                 "width": "{foundations.styles.border.small}",
                 "style": "solid"
               },
@@ -4616,7 +4666,7 @@
           },
           "label": {
             "default": {
-              "value": "{palette.tertiary.main}",
+              "value": "{foundations.palette.common.white}",
               "type": "color"
             },
             "hover": {
@@ -4713,7 +4763,7 @@
         },
         "label": {
           "default": {
-            "value": "{palette.common.black}",
+            "value": "{palette.text.primary}",
             "type": "color"
           },
           "disabled": {
@@ -5070,6 +5120,22 @@
           }
         },
         "heroBlock": {
+          "marginBottom": {
+            "xs": {
+              "value": "{foundations.styles.spacingScale.8}",
+              "type": "spacing"
+            },
+            "md": {
+              "value": "{foundations.styles.spacingScale.10}",
+              "type": "spacing"
+            },
+            "lg": {
+              "value": "{foundations.styles.spacingScale.12}",
+              "type": "spacing"
+            }
+          }
+        },
+        "heroCarouselBlock": {
           "marginBottom": {
             "xs": {
               "value": "{foundations.styles.spacingScale.8}",
@@ -5625,10 +5691,6 @@
           "value": "{foundations.styles.spacingScale.4}",
           "type": "spacing"
         },
-        "fill": {
-          "value": "{foundations.palette.common.white}",
-          "type": "color"
-        },
         "padding": {
           "xs": {
             "value": "{foundations.styles.spacingScale.3},{foundations.styles.spacingScale.2},{foundations.styles.spacingScale.3},{foundations.styles.spacingScale.2}",
@@ -5659,6 +5721,16 @@
         }
       },
       "hero": {
+        "card": {
+          "fg": {
+            "value": "{palette.text.primary}",
+            "type": "color"
+          },
+          "bg": {
+            "value": "{palette.background.paper}",
+            "type": "color"
+          }
+        },
         "image": {
           "gradient": {
             "background": {
@@ -5666,14 +5738,6 @@
               "type": "color"
             }
           }
-        },
-        "onLight": {
-          "value": "{foundations.palette.common.black}",
-          "type": "color"
-        },
-        "onDark": {
-          "value": "{foundations.palette.common.white}",
-          "type": "color"
         },
         "width": {
           "xs": {
@@ -5850,10 +5914,6 @@
           }
         },
         "card": {
-          "bgNoPips": {
-            "value": "{palette.background.paper}",
-            "type": "color"
-          },
           "fg": {
             "value": "{palette.text.primary}",
             "type": "color"
@@ -5870,6 +5930,22 @@
               "type": "color"
             }
           }
+        }
+      },
+      "heroImage": {
+        "mobileImageBreakpoint": {
+          "value": 1200,
+          "type": "sizing"
+        },
+        "sizes": {
+          "value": [
+            375,
+            786,
+            1200,
+            1500,
+            1800
+          ],
+          "type": "other"
         }
       },
       "iconButton": {
@@ -5902,7 +5978,7 @@
           },
           "icon": {
             "default": {
-              "value": "{palette.text.primary}",
+              "value": "{foundations.palette.common.black}",
               "type": "color"
             },
             "disabled": {
@@ -6310,6 +6386,18 @@
           "type": "typography"
         }
       },
+      "navHeader": {
+        "height": {
+          "xs": {
+            "value": "64px",
+            "type": "sizing"
+          },
+          "lg": {
+            "value": "129px",
+            "type": "sizing"
+          }
+        }
+      },
       "navigation": {
         "fg": {
           "value": "{palette.text.primary}",
@@ -6576,8 +6664,12 @@
           }
         },
         "width": {
+          "xs": {
+            "value": "100%",
+            "type": "sizing"
+          },
           "sm": {
-            "value": "390px",
+            "value": "auto",
             "type": "sizing"
           },
           "input": {
@@ -6586,10 +6678,6 @@
           },
           "icon": {
             "value": "{foundations.styles.spacingScale.6}",
-            "type": "sizing"
-          },
-          "lg": {
-            "value": "200px",
             "type": "sizing"
           },
           "popper": {
@@ -6603,20 +6691,24 @@
             "type": "spacing"
           }
         },
-        "cancelButtonContainer": {
-          "padding": {
-            "value": "{foundations.styles.spacingScale.3}, 0, {foundations.styles.spacingScale.3}, {foundations.styles.spacingScale.6}",
-            "type": "spacing"
-          }
-        },
         "listBox": {
           "width": {
-            "value": "374px",
-            "type": "sizing"
+            "xs": {
+              "value": "100vw",
+              "type": "sizing"
+            },
+            "sm": {
+              "value": "100%",
+              "type": "sizing"
+            }
           },
           "left": {
             "xs": {
               "value": "-{foundations.styles.spacingScale.5}",
+              "type": "spacing"
+            },
+            "sm": {
+              "value": "0px",
               "type": "spacing"
             }
           },
@@ -6755,11 +6847,11 @@
       "showCard": {
         "infoBar": {
           "bg": {
-            "value": "{palette.background.inverse}",
+            "value": "{foundations.palette.common.black}",
             "type": "color"
           },
           "fg": {
-            "value": "{palette.text.inverse}",
+            "value": "{foundations.palette.common.white}",
             "type": "color"
           },
           "padding": {
@@ -6835,11 +6927,11 @@
       "showPageInfo": {
         "infoBar": {
           "bg": {
-            "value": "{palette.background.inverse}",
+            "value": "{foundations.palette.common.black}",
             "type": "color"
           },
           "fg": {
-            "value": "{palette.text.inverse}",
+            "value": "{foundations.palette.common.white}",
             "type": "color"
           },
           "padding": {
@@ -7129,7 +7221,7 @@
         },
         "icon": {
           "default": {
-            "value": "{palette.text.primary}",
+            "value": "{foundations.palette.common.black}",
             "type": "color"
           },
           "disabled": {
@@ -7154,6 +7246,14 @@
         "padding": {
           "value": "{foundations.styles.spacingScale.3}, {foundations.styles.spacingScale.3}, {foundations.styles.spacingScale.3}, {foundations.styles.spacingScale.3},",
           "type": "spacing"
+        }
+      }
+    },
+    "page": {
+      "innerContainer": {
+        "maxWidth": {
+          "value": 1800,
+          "type": "sizing"
         }
       }
     },
