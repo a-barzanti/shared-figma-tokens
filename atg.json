@@ -3066,7 +3066,7 @@
           "type": "color"
         },
         "fg": {
-          "value": "{foundations.palette.common.white}",
+          "value": "{palette.text.primary}",
           "type": "color"
         }
       },
@@ -6490,7 +6490,7 @@
           "type": "color"
         },
         "fg": {
-          "value": "{foundations.palette.common.white}",
+          "value": "{palette.text.primary}",
           "type": "color"
         }
       },
